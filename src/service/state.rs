@@ -221,9 +221,9 @@ impl State {
         if let Some(client) = self.get_platform_client().await {
             if let DeviceType::Other(other) = &device.device_type() {
                 // Cannot poll an unknown device
-                // <https://github.com/wez/govee2mqtt/issues/391>
-                // <https://github.com/wez/govee2mqtt/issues/501>
-                // <https://github.com/wez/govee2mqtt/issues/394>
+                // <https://github.com/adaofeliz/govee2mqtt/issues/391>
+                // <https://github.com/adaofeliz/govee2mqtt/issues/501>
+                // <https://github.com/adaofeliz/govee2mqtt/issues/394>
                 log::trace!("device {device} cannot be polled because it has type Other: {other}");
                 return Ok(false);
             }

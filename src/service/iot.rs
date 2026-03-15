@@ -337,7 +337,7 @@ struct OpData {
     command: Vec<Base64HexBytes>,
 
     // The next 4 fields are sourced from H6199
-    // <https://github.com/wez/govee2mqtt/issues/36>
+    // <https://github.com/adaofeliz/govee2mqtt/issues/36>
     #[serde(rename = "modeValue", default)]
     mode_value: Vec<Base64HexBytes>,
     #[serde(rename = "sleepValue", default)]

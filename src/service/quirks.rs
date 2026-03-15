@@ -177,39 +177,39 @@ fn load_quirks() -> HashMap<String, Quirk> {
     for quirk in [
         // H60A1 Govee Ceiling Light has a color temperature range of 2200K - 6500K
         // Without this quirk, the LAN API fallback reports (2000, 9000) which causes issues
-        // <https://github.com/wez/govee2mqtt/pull/502>
+        // <https://github.com/adaofeliz/govee2mqtt/pull/502>
         Quirk::lan_api_capable_light("H60A1", CEILING).with_color_temp_range(2200, 6500),
         // Color temperature is more restrictive than the fallback range
-        // <https://github.com/wez/govee2mqtt/issues/511>
+        // <https://github.com/adaofeliz/govee2mqtt/issues/511>
         Quirk::lan_api_capable_light("H6022", BULB).with_color_temp_range(2700, 6500),
         Quirk::lan_api_capable_light("H610A", STRIP),
         // At the time of writing, the metadata
         // returned by Govee is completely bogus for this
         // device
-        // <https://github.com/wez/govee2mqtt/issues/15>
+        // <https://github.com/adaofeliz/govee2mqtt/issues/15>
         Quirk::light("H6141", STRIP).with_broken_platform(),
         // At the time of writing, the metadata
         // returned by Govee is completely bogus for this
         // device
-        // <https://github.com/wez/govee2mqtt/issues/14#issuecomment-1880050091>
+        // <https://github.com/adaofeliz/govee2mqtt/issues/14#issuecomment-1880050091>
         Quirk::light("H6159", STRIP).with_broken_platform(),
-        // <https://github.com/wez/govee2mqtt/issues/152>
+        // <https://github.com/adaofeliz/govee2mqtt/issues/152>
         Quirk::light("H6003", BULB).with_broken_platform(),
-        // <https://github.com/wez/govee2mqtt/issues/40#issuecomment-1889726710>
+        // <https://github.com/adaofeliz/govee2mqtt/issues/40#issuecomment-1889726710>
         // indicates that this one doesn't work like the others with IoT
         Quirk::light("H6121", STRIP).with_iot_api_support(false),
-        // <https://github.com/wez/govee2mqtt/issues/40>
+        // <https://github.com/adaofeliz/govee2mqtt/issues/40>
         Quirk::light("H6154", STRIP).with_iot_api_support(false),
-        // <https://github.com/wez/govee2mqtt/issues/49>
+        // <https://github.com/adaofeliz/govee2mqtt/issues/49>
         Quirk::light("H6176", STRIP).with_iot_api_support(false),
         // Platform API probably shouldn't return this device (I suppose,
         // aside from letting us find out its name), and we need to know
         // that it is definitely BLE-only
-        // <https://github.com/wez/govee2mqtt/issues/92>
+        // <https://github.com/adaofeliz/govee2mqtt/issues/92>
         Quirk::light("H6102", STRIP)
             .with_broken_platform()
             .with_ble_only(true),
-        // Another BLE-only device <https://github.com/wez/govee2mqtt/issues/77>
+        // Another BLE-only device <https://github.com/adaofeliz/govee2mqtt/issues/77>
         Quirk::light("H6053", STRIP)
             .with_broken_platform()
             .with_ble_only(true),
@@ -256,7 +256,7 @@ fn load_quirks() -> HashMap<String, Quirk> {
             .with_brightness(),
         Quirk::space_heater("H7135")
             .with_platform_temperature_sensor_units(TemperatureUnits::Fahrenheit),
-        // <https://github.com/wez/govee2mqtt/issues/343>
+        // <https://github.com/adaofeliz/govee2mqtt/issues/343>
         Quirk::ice_maker("H7172").with_iot_api_support(false),
         Quirk::thermometer("H5051")
             .with_platform_temperature_sensor_units(TemperatureUnits::Fahrenheit)

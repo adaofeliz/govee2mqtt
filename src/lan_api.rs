@@ -484,7 +484,7 @@ async fn lan_disco(
         // the ip to the v4 unspecified address during deserialization and
         // check for it here. We'll assume that the ip to use is the ip
         // from which we got the scan response.
-        // <https://github.com/wez/govee2mqtt/issues/437>
+        // <https://github.com/adaofeliz/govee2mqtt/issues/437>
         if let Response::Scan(dev) = &mut response.msg {
             if dev.ip.is_unspecified() {
                 dev.ip = addr.ip();

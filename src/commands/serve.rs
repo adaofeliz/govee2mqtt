@@ -39,7 +39,7 @@ async fn poll_single_device(state: &StateHandle, device: &Device) -> anyhow::Res
     // Some Govee devices have bad firmware that will cause the
     // lights to flicker about a minute after polling, so it
     // is desirable to keep polling on a regular basis.
-    // <https://github.com/wez/govee2mqtt/issues/250>
+    // <https://github.com/adaofeliz/govee2mqtt/issues/250>
     if let Some(lan_device) = &device.lan_device {
         if let Some(client) = state.get_lan_client().await {
             if let Ok(status) = client.query_status(lan_device).await {
@@ -163,7 +163,7 @@ async fn enumerate_devices_via_undo_api(
 const ISSUE_76_EXPLANATION: &str = "Startup cannot automatically continue because entity names\n\
     could become inconsistent especially across frequent similar\n\
     intermittent issues if/as they occur on an ongoing basis.\n\
-    Please see https://github.com/wez/govee2mqtt/issues/76\n\
+    Please see https://github.com/adaofeliz/govee2mqtt/issues/76\n\
     A workaround is to remove the Govee API credentials from your\n\
     configuration, which will cause this govee2mqtt to use only\n\
     the LAN API. Two consequences of that will be loss of control\n\

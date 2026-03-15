@@ -41,7 +41,7 @@ kick off a final build for armv7.
 We can then revise this to follow releases in the intended way.
 Maybe just leave it to dependabot?
 
-refs: https://github.com/wez/govee2mqtt/issues/517
+refs: https://github.com/adaofeliz/govee2mqtt/issues/517
 refs: https://github.com/home-assistant/builder/pull/263
 
 ## [2025.11.22-d402185a] - 2025-11-22 15:26
@@ -50,7 +50,7 @@ refs: https://github.com/home-assistant/builder/pull/263
 
 - H6022: add quirk to set correct color temperature range
 
-refs: https://github.com/wez/govee2mqtt/issues/511
+refs: https://github.com/adaofeliz/govee2mqtt/issues/511
 
 ## [2025.11.11-1ef2cc66] - 2025-11-11 07:05
 
@@ -63,8 +63,8 @@ that causes a flicker about a minute after being polled.
 
 The solution is apparently to poll more frequently(!)
 
-refs: https://github.com/wez/govee2mqtt/issues/250
-- Add H60A1 quirk with correct color temperature range (2200K-6500K) ([#502](https://github.com/wez/govee2mqtt/issues/502))
+refs: https://github.com/adaofeliz/govee2mqtt/issues/250
+- Add H60A1 quirk with correct color temperature range (2200K-6500K) ([#502](https://github.com/adaofeliz/govee2mqtt/issues/502))
 
 Co-authored-by: copilot-swe-agent[bot] <198982749+Copilot@users.noreply.github.com>
 Co-authored-by: micsco <31056+micsco@users.noreply.github.com>
@@ -76,10 +76,10 @@ These cannot be polled via the platform API, so trying to do so leads to
 harmless errors in the logs, but some users (with many groups) report
 that they are being rate limited by the platform API.
 
-refs: https://github.com/wez/govee2mqtt/issues/391
-refs: https://github.com/wez/govee2mqtt/issues/501
-refs: https://github.com/wez/govee2mqtt/issues/394
-closes: https://github.com/wez/govee2mqtt/pull/505
+refs: https://github.com/adaofeliz/govee2mqtt/issues/391
+refs: https://github.com/adaofeliz/govee2mqtt/issues/501
+refs: https://github.com/adaofeliz/govee2mqtt/issues/394
+closes: https://github.com/adaofeliz/govee2mqtt/pull/505
 
 ## [2025.11.07-d5887028] - 2025-11-07 06:30
 
@@ -94,18 +94,18 @@ try saving their configuration, because that is what fixed things for
 me after updating.
 - Hass: add mqtt broker connection retry loop
 
-refs: https://github.com/wez/govee2mqtt/pull/499
-refs: https://github.com/wez/govee2mqtt/issues/402
-refs: https://github.com/wez/govee2mqtt/issues/434
+refs: https://github.com/adaofeliz/govee2mqtt/pull/499
+refs: https://github.com/adaofeliz/govee2mqtt/issues/402
+refs: https://github.com/adaofeliz/govee2mqtt/issues/434
 - Run.sh: add wait/poll logic for mqtt addon to become available
 
-refs: https://github.com/wez/govee2mqtt/pull/499
-refs: https://github.com/wez/govee2mqtt/issues/402
-refs: https://github.com/wez/govee2mqtt/issues/498
-refs: https://github.com/wez/govee2mqtt/issues/486
-refs: https://github.com/wez/govee2mqtt/issues/471
-refs: https://github.com/wez/govee2mqtt/issues/408
-refs: https://github.com/wez/govee2mqtt/issues/142
+refs: https://github.com/adaofeliz/govee2mqtt/pull/499
+refs: https://github.com/adaofeliz/govee2mqtt/issues/402
+refs: https://github.com/adaofeliz/govee2mqtt/issues/498
+refs: https://github.com/adaofeliz/govee2mqtt/issues/486
+refs: https://github.com/adaofeliz/govee2mqtt/issues/471
+refs: https://github.com/adaofeliz/govee2mqtt/issues/408
+refs: https://github.com/adaofeliz/govee2mqtt/issues/142
 
 ## [2025.11.05-d715b482] - 2025-11-05 07:40
 
@@ -162,12 +162,12 @@ met.
 Hopefully that will persuades HAOS's supervisor watchdog to try us again
 in a little bit, and hopefully make the mqtt details available to us.
 
-refs: https://github.com/wez/govee2mqtt/issues/496
-refs: https://github.com/wez/govee2mqtt/issues/486
-refs: https://github.com/wez/govee2mqtt/issues/471
-refs: https://github.com/wez/govee2mqtt/issues/464
-refs: https://github.com/wez/govee2mqtt/issues/408
-refs: https://github.com/wez/govee2mqtt/issues/142
+refs: https://github.com/adaofeliz/govee2mqtt/issues/496
+refs: https://github.com/adaofeliz/govee2mqtt/issues/486
+refs: https://github.com/adaofeliz/govee2mqtt/issues/471
+refs: https://github.com/adaofeliz/govee2mqtt/issues/464
+refs: https://github.com/adaofeliz/govee2mqtt/issues/408
+refs: https://github.com/adaofeliz/govee2mqtt/issues/142
 - Bump actions/upload-artifact from 4 to 5
 
 Bumps [actions/upload-artifact](https://github.com/actions/upload-artifact) from 4 to 5.
@@ -212,7 +212,7 @@ discovery packet.
 Let's try defaulting it to the address from which we received
 the discovery packet.
 
-refs: https://github.com/wez/govee2mqtt/issues/437
+refs: https://github.com/adaofeliz/govee2mqtt/issues/437
 
 ## [2025.10.26-b29dee52] - 2025-10-26 09:27
 
@@ -260,8 +260,8 @@ https://docs.docker.com/reference/compose-file/version-and-name/
 Also adding optional bind mount for those who prefer to persist their data. Thanks!
 - Http: fix route syntax
 
-closes: https://github.com/wez/govee2mqtt/issues/483
-closes: https://github.com/wez/govee2mqtt/issues/482
+closes: https://github.com/adaofeliz/govee2mqtt/issues/483
+closes: https://github.com/adaofeliz/govee2mqtt/issues/482
 - Improve undoc and platform API errors on startup
 
 This commit expands upon the error message reported during failed
@@ -279,11 +279,11 @@ We now also will periodically (every 10 minutes) query those APIs for an
 updated list of devices/rooms, which helps to detect newly adopted govee
 devices after the service has started.
 
-refs: https://github.com/wez/govee2mqtt/issues/76
+refs: https://github.com/adaofeliz/govee2mqtt/issues/76
 - Addon: make it clearer that undoc and platform API require internet
 - Support resolving hostnames for GOVEE_LAN_SCAN
 
-closes: https://github.com/wez/govee2mqtt/issues/423
+closes: https://github.com/adaofeliz/govee2mqtt/issues/423
 - Remove copypasta
 
 ### 🐛 Bug Fixes
@@ -316,7 +316,7 @@ path prefix.
 
 revert it for now
 
-refs: https://github.com/wez/govee2mqtt/issues/306
+refs: https://github.com/adaofeliz/govee2mqtt/issues/306
 
 ## [2025.01.04-61765fd0] - 2025-01-04 15:00
 
@@ -332,7 +332,7 @@ path that should be prefixed to the redirect URL,
 but for now we can avoid the redirect by just setting
 the correct URL to start.
 
-refs: https://github.com/wez/govee2mqtt/issues/306
+refs: https://github.com/adaofeliz/govee2mqtt/issues/306
 
 ## [2025.01.04-abbd0b48] - 2025-01-04 14:17
 
@@ -340,7 +340,7 @@ refs: https://github.com/wez/govee2mqtt/issues/306
 
 - Maybe enable ingress support for hass addon
 
-refs: https://github.com/wez/govee2mqtt/issues/306
+refs: https://github.com/adaofeliz/govee2mqtt/issues/306
 
 ## [2025.01.02-63e73826] - 2025-01-02 18:47
 
@@ -351,14 +351,14 @@ refs: https://github.com/wez/govee2mqtt/issues/306
 This reverts commit c0545a87111a08465fd8fb9e717e5fff868a4b33; we'll
 revisit this after a bit more investigation.
 
-refs: https://github.com/wez/govee2mqtt/issues/354
-refs: https://github.com/wez/govee2mqtt/issues/353
+refs: https://github.com/adaofeliz/govee2mqtt/issues/354
+refs: https://github.com/adaofeliz/govee2mqtt/issues/353
 - Undoc_api: allow for null topic as well
 
 We really can't do much with an entry that is null'd out like this,
 but we should at least allow parsing that data without error.
 
-refs: https://github.com/wez/govee2mqtt/issues/352
+refs: https://github.com/adaofeliz/govee2mqtt/issues/352
 
 ## [2025.01.01-ae1f0cc1] - 2025-01-01 13:40
 
@@ -373,7 +373,7 @@ Turns out that we don't need the device field to activate
 a one-click, so we skip that part of the struct that we're
 extracting.
 
-refs: https://github.com/wez/govee2mqtt/issues/352
+refs: https://github.com/adaofeliz/govee2mqtt/issues/352
 
 ## [2024.12.31-39564aea] - 2024-12-31 14:51
 
@@ -381,7 +381,7 @@ refs: https://github.com/wez/govee2mqtt/issues/352
 
 - H7172 IceMaker: add quirk to avoid IoT API
 
-refs: https://github.com/wez/govee2mqtt/issues/343
+refs: https://github.com/adaofeliz/govee2mqtt/issues/343
 
 ## [2024.12.31-4d0b552f] - 2024-12-31 14:30
 
@@ -398,16 +398,16 @@ obtain that information to pave over gaps in the Govee API.
 This commit adds a fallback to querying that light effect
 catalog.
 
-refs: https://github.com/wez/govee2mqtt/issues/349
+refs: https://github.com/adaofeliz/govee2mqtt/issues/349
 - Add mqtt hostname in iot connect error messages
 
 This makes it easier to understand errors if trace logging is not
 enabled.
 
-refs: https://github.com/wez/govee2mqtt/issues/345
+refs: https://github.com/adaofeliz/govee2mqtt/issues/345
 - Undoc_api: allow cmdVersion to be missing or null
 
-refs: https://github.com/wez/govee2mqtt/issues/324
+refs: https://github.com/adaofeliz/govee2mqtt/issues/324
 
 ### 📚 Documentation
 
@@ -422,7 +422,7 @@ refs: https://github.com/wez/govee2mqtt/issues/324
 
 Partial revert of 8029cb5d7dd9b3ff7ee5ee2a161be97f9ca428ca
 
-refs: https://github.com/wez/govee2mqtt/issues/348
+refs: https://github.com/adaofeliz/govee2mqtt/issues/348
 - Prefer to use LAN API to apply light scenes
 
 The updated logic for this should in theory be better in most cases?
@@ -447,7 +447,7 @@ Previously, the build would fail on arm, this should now be
 resolved.
 
 refs: https://github.com/messense/if-addrs/issues/41
-- Correct spelling of Fahrenheit. Fixes https://github.com/wez/govee2mqtt/issues/160
+- Correct spelling of Fahrenheit. Fixes https://github.com/adaofeliz/govee2mqtt/issues/160
 - Add H7052
 - Avoid using deprecated color_mode flag
 
@@ -583,7 +583,7 @@ error[E0277]: the trait bound `i32: From<u32>` is not satisfied
    = note: required for `u32` to implement `Into<i32>`
 - Try to encourage addon to populate /app/assets
 
-refs: https://github.com/wez/govee2mqtt/issues/123
+refs: https://github.com/adaofeliz/govee2mqtt/issues/123
 
 ### 🐛 Bug Fixes
 
@@ -620,7 +620,7 @@ Signed-off-by: dependabot[bot] <support@github.com>
 Add additional fan SKUs that I can confirm work with version 2024.01.24-ea3cd430
 - Addon: set key/password fields to password type in schema
 
-closes: https://github.com/wez/govee2mqtt/issues/168
+closes: https://github.com/adaofeliz/govee2mqtt/issues/168
 
 ### 🚀 Features
 
@@ -632,7 +632,7 @@ closes: https://github.com/wez/govee2mqtt/issues/168
 
 - Don't insert empty scene to empty list of scenes
 
-refs: https://github.com/wez/govee2mqtt/issues/100
+refs: https://github.com/adaofeliz/govee2mqtt/issues/100
 - Fix link
 - Bump the all group with 4 updates
 
@@ -680,15 +680,15 @@ updated-dependencies:
 Signed-off-by: dependabot[bot] <support@github.com>
 - Improve error message if binding http port fails
 
-refs: https://github.com/wez/govee2mqtt/issues/103
+refs: https://github.com/adaofeliz/govee2mqtt/issues/103
 - NOCHANGELOG ignore dependabot updates
 - H7173: update gearMode label -> Heat
 - H7173: fix work mode default values
 
-refs: https://github.com/wez/govee2mqtt/issues/100
+refs: https://github.com/adaofeliz/govee2mqtt/issues/100
 - H713B: add quirk for temperature scale
 
-refs: https://github.com/wez/govee2mqtt/issues/108
+refs: https://github.com/adaofeliz/govee2mqtt/issues/108
 - Mqtt: avoid using auto_id for the client id
 
 This feature requires server side support, and some users have
@@ -696,10 +696,10 @@ that functionality disabled.
 
 Instead, just compute a uuid to produce a randomized id.
 
-closes: https://github.com/wez/govee2mqtt/issues/106
+closes: https://github.com/adaofeliz/govee2mqtt/issues/106
 - Improve error context if http service fails to start
 
-refs: https://github.com/wez/govee2mqtt/issues/103
+refs: https://github.com/adaofeliz/govee2mqtt/issues/103
 
 ## [2024.01.21-33e8cd7c] - 2024-01-21 15:45
 
@@ -715,7 +715,7 @@ We report an empty string in cases where we don't know the state.
 We obviously cannot set the scene to the empty string though,
 so we will raise an error in that case.
 
-refs: https://github.com/wez/govee2mqtt/issues/98
+refs: https://github.com/adaofeliz/govee2mqtt/issues/98
 
 ## [2024.01.21-088d4ca8] - 2024-01-21 14:10
 
@@ -723,7 +723,7 @@ refs: https://github.com/wez/govee2mqtt/issues/98
 
 - H6119: add quirk for this BLE-only device
 
-closes: https://github.com/wez/govee2mqtt/issues/97
+closes: https://github.com/adaofeliz/govee2mqtt/issues/97
 
 ## [2024.01.20-94084d56] - 2024-01-21 03:53
 
@@ -734,10 +734,10 @@ closes: https://github.com/wez/govee2mqtt/issues/97
 These are actually handled already, I just forgot to suppress
 this earlier.
 
-refs: https://github.com/wez/govee2mqtt/issues/94
+refs: https://github.com/adaofeliz/govee2mqtt/issues/94
 - H5179: add quirk for temperature and humidity readings
 
-refs: https://github.com/wez/govee2mqtt/issues/95
+refs: https://github.com/adaofeliz/govee2mqtt/issues/95
 
 ## [2024.01.19-ffca9c12] - 2024-01-20 04:22
 
@@ -745,7 +745,7 @@ refs: https://github.com/wez/govee2mqtt/issues/95
 
 - Fix: some slider modes didn't get registered with hass
 
-refs: https://github.com/wez/govee2mqtt/issues/93
+refs: https://github.com/adaofeliz/govee2mqtt/issues/93
 
 ## [2024.01.19-835bff82] - 2024-01-20 01:27
 
@@ -753,7 +753,7 @@ refs: https://github.com/wez/govee2mqtt/issues/93
 
 - H6053, H617[CEF]: add quirk for BLE-only devices
 
-closes: https://github.com/wez/govee2mqtt/issues/77
+closes: https://github.com/adaofeliz/govee2mqtt/issues/77
 
 ## [2024.01.19-253f49bc] - 2024-01-20 00:46
 
@@ -761,7 +761,7 @@ closes: https://github.com/wez/govee2mqtt/issues/77
 
 - H6102 - add quirk about it being BLE-only for sure
 
-refs: https://github.com/wez/govee2mqtt/issues/92
+refs: https://github.com/adaofeliz/govee2mqtt/issues/92
 
 ## [2024.01.19-027d65d5] - 2024-01-19 22:18
 
@@ -769,10 +769,10 @@ refs: https://github.com/wez/govee2mqtt/issues/92
 
 - H7171: have target temperature match state in platform API
 
-refs: https://github.com/wez/govee2mqtt/issues/91
+refs: https://github.com/adaofeliz/govee2mqtt/issues/91
 - Use nightlightToggle state for light state when available
 
-refs: https://github.com/wez/govee2mqtt/issues/89
+refs: https://github.com/adaofeliz/govee2mqtt/issues/89
 
 ### 🧹 Refactor
 
@@ -792,10 +792,10 @@ This helps have a less state temperature reading for the device
 
 - H7132: add quirk to note the units of the device
 
-refs: https://github.com/wez/govee2mqtt/issues/90
+refs: https://github.com/adaofeliz/govee2mqtt/issues/90
 - Try to improve handling of light control for appliances
 
-refs: https://github.com/wez/govee2mqtt/issues/89
+refs: https://github.com/adaofeliz/govee2mqtt/issues/89
 
 ## [2024.01.18-4475eb63] - 2024-01-19 01:06
 
@@ -803,7 +803,7 @@ refs: https://github.com/wez/govee2mqtt/issues/89
 
 - H7151 and other dehumidifiers: enable humidifier entity
 
-refs: https://github.com/wez/govee2mqtt/issues/86
+refs: https://github.com/adaofeliz/govee2mqtt/issues/86
 
 ## [2024.01.18-b83b7d15] - 2024-01-18 15:48
 
@@ -818,7 +818,7 @@ remember to poll their state shortly after
 contolling them.
 - H7142: parse Auto mode range from metadata
 
-refs: https://github.com/wez/govee2mqtt/issues/81
+refs: https://github.com/adaofeliz/govee2mqtt/issues/81
 - Defer building mode labels unless we are doing preset buttons
 
 This just saves a little bit of memory
@@ -836,10 +836,10 @@ This just saves a little bit of memory
 - Add some notes about supported devices
 - Add Mode/Scene select box for non-light devices with modes/scenes
 
-refs: https://github.com/wez/govee2mqtt/issues/81
-refs: https://github.com/wez/govee2mqtt/issues/59
-refs: https://github.com/wez/govee2mqtt/issues/56
-refs: https://github.com/wez/govee2mqtt/issues/22
+refs: https://github.com/adaofeliz/govee2mqtt/issues/81
+refs: https://github.com/adaofeliz/govee2mqtt/issues/59
+refs: https://github.com/adaofeliz/govee2mqtt/issues/56
+refs: https://github.com/adaofeliz/govee2mqtt/issues/22
 
 ### 📚 Documentation
 
@@ -855,8 +855,8 @@ refs: https://github.com/wez/govee2mqtt/issues/22
 
 - Fix overzealously showing preset buttons for things that should be sliders
 
-refs: https://github.com/wez/govee2mqtt/issues/33
-refs: https://github.com/wez/govee2mqtt/issues/81
+refs: https://github.com/adaofeliz/govee2mqtt/issues/33
+refs: https://github.com/adaofeliz/govee2mqtt/issues/81
 
 ## [2024.01.17-e8eb8dd7] - 2024-01-17 18:55
 
@@ -868,8 +868,8 @@ refs: https://github.com/wez/govee2mqtt/issues/81
 We were converting eg: 1C in 33.8F which is the correct absolute
 value, but nonsense when talking about deltas.
 
-refs: https://github.com/wez/govee2mqtt/issues/30
-refs: https://github.com/wez/govee2mqtt/issues/59
+refs: https://github.com/adaofeliz/govee2mqtt/issues/30
+refs: https://github.com/adaofeliz/govee2mqtt/issues/59
 
 ## [2024.01.17-1114ad05] - 2024-01-17 18:32
 
@@ -877,14 +877,14 @@ refs: https://github.com/wez/govee2mqtt/issues/59
 
 - Adjust effective ble-only-ness. It's not ble-only if have platform API
 
-refs: https://github.com/wez/govee2mqtt/issues/80
+refs: https://github.com/adaofeliz/govee2mqtt/issues/80
 - Try to avoid fractional bounds on temperature sliders
 
 ### 🐛 Bug Fixes
 
 - Fixup representation of presets that have labels in metadata
 
-refs: https://github.com/wez/govee2mqtt/issues/59
+refs: https://github.com/adaofeliz/govee2mqtt/issues/59
 
 ## [2024.01.17-29afb853] - 2024-01-17 18:02
 
@@ -895,17 +895,17 @@ refs: https://github.com/wez/govee2mqtt/issues/59
 Apparently this is how you trigger hass's auto conversion
 of units.
 
-refs: https://github.com/wez/govee2mqtt/issues/30
+refs: https://github.com/adaofeliz/govee2mqtt/issues/30
 - Remove automatic "Parameter" suffix from mode labels
 - Ensure mode preset buttons have a unique id
 
-refs: https://github.com/wez/govee2mqtt/issues/30
+refs: https://github.com/adaofeliz/govee2mqtt/issues/30
 
 ### 🐛 Bug Fixes
 
 - Fix: allow parsing fractional temperature values
 
-refs: https://github.com/wez/govee2mqtt/issues/30
+refs: https://github.com/adaofeliz/govee2mqtt/issues/30
 
 ## [2024.01.17-d6e027ab] - 2024-01-17 17:01
 
@@ -913,22 +913,22 @@ refs: https://github.com/wez/govee2mqtt/issues/30
 
 - H7171: show modes as preset buttons rather than sliders
 
-refs: https://github.com/wez/govee2mqtt/issues/46
+refs: https://github.com/adaofeliz/govee2mqtt/issues/46
 - H7131: show gearMode as preset buttons rather than sliders
 
-refs: https://github.com/wez/govee2mqtt/issues/59
+refs: https://github.com/adaofeliz/govee2mqtt/issues/59
 - Clamp temperature values to allowed range
 
-refs: https://github.com/wez/govee2mqtt/issues/30
+refs: https://github.com/adaofeliz/govee2mqtt/issues/30
 
 ### 🐛 Bug Fixes
 
 - Fixup preset button labels
 
-refs: https://github.com/wez/govee2mqtt/issues/30
+refs: https://github.com/adaofeliz/govee2mqtt/issues/30
 - Fix: temperature limits set in C even though value is in F
 
-refs: https://github.com/wez/govee2mqtt/issues/30
+refs: https://github.com/adaofeliz/govee2mqtt/issues/30
 
 ## [2024.01.17-2c728a28] - 2024-01-17 13:30
 
@@ -936,7 +936,7 @@ refs: https://github.com/wez/govee2mqtt/issues/30
 
 - Fix: "device has no targettemperature" error
 
-refs: https://github.com/wez/govee2mqtt/issues/56
+refs: https://github.com/adaofeliz/govee2mqtt/issues/56
 
 ## [2024.01.16-761f706a] - 2024-01-17 06:11
 
@@ -944,7 +944,7 @@ refs: https://github.com/wez/govee2mqtt/issues/56
 
 - H7171: add quirk for correct temperature units
 
-refs: https://github.com/wez/govee2mqtt/issues/46
+refs: https://github.com/adaofeliz/govee2mqtt/issues/46
 - Platform api: log result of control device attempt
 
 This will help to prove/disprove that we did the right thing
@@ -956,7 +956,7 @@ in cases where the request seems to do nothing.
 
 - H7173: add quirk to note that it returns temperature in F
 
-res: https://github.com/wez/govee2mqtt/issues/30
+res: https://github.com/adaofeliz/govee2mqtt/issues/30
 - Allow setting other temperature instances
 
 The kettles have a different instance name than targetTemperature,
@@ -965,8 +965,8 @@ so allow setting that.
 Reinstate decimal points in the computed temperature values to
 avoid rounding/truncation issues compared to the govee app.
 
-refs: https://github.com/wez/govee2mqtt/issues/69
-refs: https://github.com/wez/govee2mqtt/issues/30
+refs: https://github.com/adaofeliz/govee2mqtt/issues/69
+refs: https://github.com/adaofeliz/govee2mqtt/issues/30
 - H7173: show modes as "Activate Preset" buttons
 
 I think these are a bit more accessible and intuitive, and allow
@@ -977,10 +977,10 @@ These buttons replace the original slider, which may still
 function for folks upgrading, but won't be generated for
 new installs.
 
-refs: https://github.com/wez/govee2mqtt/issues/30
+refs: https://github.com/adaofeliz/govee2mqtt/issues/30
 - Avoid sending state_topic:None for numbers
 
-refs: https://github.com/wez/govee2mqtt/issues/30
+refs: https://github.com/adaofeliz/govee2mqtt/issues/30
 
 ## [2024.01.16-f8ed644b] - 2024-01-16 17:13
 
@@ -988,7 +988,7 @@ refs: https://github.com/wez/govee2mqtt/issues/30
 
 - H7130: device reports temp in F
 
-refs: https://github.com/wez/govee2mqtt/issues/69
+refs: https://github.com/adaofeliz/govee2mqtt/issues/69
 - Speculatively support changing target temperature
 
 For devices that report temperature settings, this commit
@@ -1002,12 +1002,12 @@ optimistic mode.
 It's possible that hass will keep it greyed out until
 a value is reported for it, which will be kinda sucky.
 
-refs: https://github.com/wez/govee2mqtt/issues/30
-refs: https://github.com/wez/govee2mqtt/issues/47
-refs: https://github.com/wez/govee2mqtt/issues/56
-refs: https://github.com/wez/govee2mqtt/issues/59
-refs: https://github.com/wez/govee2mqtt/issues/69
-refs: https://github.com/wez/govee2mqtt/issues/75
+refs: https://github.com/adaofeliz/govee2mqtt/issues/30
+refs: https://github.com/adaofeliz/govee2mqtt/issues/47
+refs: https://github.com/adaofeliz/govee2mqtt/issues/56
+refs: https://github.com/adaofeliz/govee2mqtt/issues/59
+refs: https://github.com/adaofeliz/govee2mqtt/issues/69
+refs: https://github.com/adaofeliz/govee2mqtt/issues/75
 - Add Temperature Scale option
 
 * *Important*: when upgrading from an earlier version,
@@ -1027,12 +1027,12 @@ Since I don't own any devices with this characteristics, this change
 has not been tested with real devices and it may not work; please
 file an issue if you're having trouble with this!
 
-refs: https://github.com/wez/govee2mqtt/issues/30
-refs: https://github.com/wez/govee2mqtt/issues/47
-refs: https://github.com/wez/govee2mqtt/issues/56
-refs: https://github.com/wez/govee2mqtt/issues/59
-refs: https://github.com/wez/govee2mqtt/issues/69
-refs: https://github.com/wez/govee2mqtt/issues/75
+refs: https://github.com/adaofeliz/govee2mqtt/issues/30
+refs: https://github.com/adaofeliz/govee2mqtt/issues/47
+refs: https://github.com/adaofeliz/govee2mqtt/issues/56
+refs: https://github.com/adaofeliz/govee2mqtt/issues/59
+refs: https://github.com/adaofeliz/govee2mqtt/issues/69
+refs: https://github.com/adaofeliz/govee2mqtt/issues/75
 
 ## [2024.01.15-fba50505] - 2024-01-16 01:11
 
@@ -1047,8 +1047,8 @@ for a given device.
 The we fallback to whatever other strategy is available: most likely
 it will be a platform API call.
 
-refs: https://github.com/wez/govee2mqtt/issues/73
-refs: https://github.com/wez/govee2mqtt/issues/56
+refs: https://github.com/adaofeliz/govee2mqtt/issues/73
+refs: https://github.com/adaofeliz/govee2mqtt/issues/56
 
 ## [2024.01.14-3c7b22d4] - 2024-01-15 01:08
 
@@ -1087,10 +1087,10 @@ This is used to try to set scenes via the lan api
 - Remove old packet encoder/decoder
 - Use 2 decimal places for temperature and humidity
 
-refs: https://github.com/wez/govee2mqtt/issues/68
+refs: https://github.com/adaofeliz/govee2mqtt/issues/68
 - Publish temperature sensors in both C and F
 
-refs: https://github.com/wez/govee2mqtt/issues/68
+refs: https://github.com/adaofeliz/govee2mqtt/issues/68
 - H7143: tweak available entities
 
 Suppress the Auto level number entity; it is part of the humidity
@@ -1098,7 +1098,7 @@ entity.
 
 Re-label "Manual".
 
-refs: https://github.com/wez/govee2mqtt/issues/22
+refs: https://github.com/adaofeliz/govee2mqtt/issues/22
 - Make iot mqtt subscriber more robust
 
 I was trying to improve debugging for reverse engineering purposes
@@ -1141,8 +1141,8 @@ polling; for my humidifier it takes a little bit for the API
 to report the changed power state for my device if it was activated
 as a side effect of setting the target humidity.
 
-refs: https://github.com/wez/govee2mqtt/issues/22
-refs: https://github.com/wez/govee2mqtt/issues/49 (maybe)
+refs: https://github.com/adaofeliz/govee2mqtt/issues/22
+refs: https://github.com/adaofeliz/govee2mqtt/issues/49 (maybe)
 - Suppress CapabilitySwitch warning about useless switch states
 
 There are some switches for which Govee provides a useless
@@ -1185,7 +1185,7 @@ Need to use the name rather than the label for the mode.
 
 - Quirks for H6121 and H6154
 
-refs: https://github.com/wez/govee2mqtt/issues/40
+refs: https://github.com/adaofeliz/govee2mqtt/issues/40
 - Avoid sending commands via IoT if quirk says not to
 
 So far the iot support quirk has been used to filter
@@ -1193,10 +1193,10 @@ out notifications, but we should also try to avoid
 sending commands via IoT if we're unsure about the
 device.
 
-refs: https://github.com/wez/govee2mqtt/issues/40
+refs: https://github.com/adaofeliz/govee2mqtt/issues/40
 - Quirk for H6176
 
-refs: https://github.com/wez/govee2mqtt/issues/49
+refs: https://github.com/adaofeliz/govee2mqtt/issues/49
 
 ## [2024.01.12-108ff95d] - 2024-01-13 04:36
 
@@ -1213,17 +1213,17 @@ These quirks allow us to correctly interpret the sensor readings
 returned from the platform API for these devices, which do not
 have any other metadata available from Govee to aid with this.
 
-refs: https://github.com/wez/govee2mqtt/issues/58
-refs: https://github.com/wez/govee2mqtt/issues/56
-refs: https://github.com/wez/govee2mqtt/issues/47
+refs: https://github.com/adaofeliz/govee2mqtt/issues/58
+refs: https://github.com/adaofeliz/govee2mqtt/issues/56
+refs: https://github.com/adaofeliz/govee2mqtt/issues/47
 
 It may also help to avoid misinterpreting the device power state
 with the rgb light state on devices that are not primarily
 lights, such as certain kinds of space heaters and humidifiers,
 and with some light strips.
 
-refs: https://github.com/wez/govee2mqtt/issues/59
-refs: https://github.com/wez/govee2mqtt/issues/49
+refs: https://github.com/adaofeliz/govee2mqtt/issues/59
+refs: https://github.com/adaofeliz/govee2mqtt/issues/49
 
 ## [2024.01.12-ff6087e2] - 2024-01-13 03:15
 
@@ -1234,7 +1234,7 @@ refs: https://github.com/wez/govee2mqtt/issues/49
 Downgrade it to trace level so that it doesn't spam the logs or
 mislead the user.
 
-refs: https://github.com/wez/govee2mqtt/issues/60
+refs: https://github.com/adaofeliz/govee2mqtt/issues/60
 - Switch last-will to unretained
 
 There are a couple of users who report that their devices appear
@@ -1259,8 +1259,8 @@ that somehow end up in a sticky state.
 So, this commit turns off the retained flag in the hope that we
 don't see any additional weird reports like this going forwards.
 
-refs: https://github.com/wez/govee2mqtt/issues/37
-refs: https://github.com/wez/govee2mqtt/issues/60
+refs: https://github.com/adaofeliz/govee2mqtt/issues/37
+refs: https://github.com/adaofeliz/govee2mqtt/issues/60
 
 ### 🐛 Bug Fixes
 
@@ -1274,10 +1274,10 @@ error condition for devices that don't support scenes. We ignore
 the error and continue, so it didn't harm anything, it was
 just noisy.
 
-refs: https://github.com/wez/govee2mqtt/issues/58
-refs: https://github.com/wez/govee2mqtt/issues/50
-refs: https://github.com/wez/govee2mqtt/issues/59
-refs: https://github.com/wez/govee2mqtt/issues/56
+refs: https://github.com/adaofeliz/govee2mqtt/issues/58
+refs: https://github.com/adaofeliz/govee2mqtt/issues/50
+refs: https://github.com/adaofeliz/govee2mqtt/issues/59
+refs: https://github.com/adaofeliz/govee2mqtt/issues/56
 
 ## [2024.01.12-afa3bc86] - 2024-01-12 17:01
 
@@ -1310,11 +1310,11 @@ entity:
 
 - Clarify tap-to-run vs. snapshot
 
-refs: https://github.com/wez/govee2mqtt/issues/51
+refs: https://github.com/adaofeliz/govee2mqtt/issues/51
 - Add sponsor section to readme
 - Automate changelog creation for the addon
 
-refs: https://github.com/wez/govee2mqtt/issues/52
+refs: https://github.com/adaofeliz/govee2mqtt/issues/52
 - Add Status diagnostic to each device
 
 It will indicate:
@@ -1338,7 +1338,7 @@ In addition, the following attributes are set on the entity:
 If any of the above are unknown, they will be null/missing
 from the attributes.
 
-refs: https://github.com/wez/govee2mqtt/issues/57
+refs: https://github.com/adaofeliz/govee2mqtt/issues/57
 
 ### 📚 Documentation
 
@@ -1350,7 +1350,7 @@ refs: https://github.com/wez/govee2mqtt/issues/57
 
 - Use signed numbers for undoc api
 
-refs: https://github.com/wez/govee2mqtt/issues/54
+refs: https://github.com/adaofeliz/govee2mqtt/issues/54
 - Try to auto-redact sensitive fields from the logs
 
 Just wrap them in Redacted and it should take of hiding them
@@ -1366,7 +1366,7 @@ it's too easy for someone not to realize what they are and
 share them when filing issues.
 - Add explicit timeout around AWS IoT connection attempt
 
-refs: https://github.com/wez/govee2mqtt/issues/48
+refs: https://github.com/adaofeliz/govee2mqtt/issues/48
 
 ## [2024.01.10-8beb67bb] - 2024-01-11 04:41
 
@@ -1380,11 +1380,11 @@ user problem reports better.
 - Add issue template
 - Add FAQ
 
-refs: https://github.com/wez/govee2mqtt/issues/43
-refs: https://github.com/wez/govee2mqtt/issues/42
-refs: https://github.com/wez/govee2mqtt/issues/41
-closes: https://github.com/wez/govee2mqtt/issues/18
-closes: https://github.com/wez/govee2mqtt/issues/17
+refs: https://github.com/adaofeliz/govee2mqtt/issues/43
+refs: https://github.com/adaofeliz/govee2mqtt/issues/42
+refs: https://github.com/adaofeliz/govee2mqtt/issues/41
+closes: https://github.com/adaofeliz/govee2mqtt/issues/18
+closes: https://github.com/adaofeliz/govee2mqtt/issues/17
 - Create config.yml
 - Faq link doesn't work in the form description
 - Add section for collecting home assistant logs
@@ -1392,13 +1392,13 @@ closes: https://github.com/wez/govee2mqtt/issues/17
 - Don't auto assign bug label
 - Allow for shorter packet lengths
 
-refs: https://github.com/wez/govee2mqtt/issues/45
+refs: https://github.com/adaofeliz/govee2mqtt/issues/45
 - Add note about how to see the logs when using docker
 - Govee started to return some data here for some devices
 
 So let's map it!
 
-refs: https://github.com/wez/govee2mqtt/issues/33
+refs: https://github.com/adaofeliz/govee2mqtt/issues/33
 
 ### 🐛 Bug Fixes
 
@@ -1412,7 +1412,7 @@ refs: https://github.com/wez/govee2mqtt/issues/33
 
 So remove the quirk that avoids it
 
-refs: https://github.com/wez/govee2mqtt/issues/7#issuecomment-1884853614
+refs: https://github.com/adaofeliz/govee2mqtt/issues/7#issuecomment-1884853614
 
 ## [2024.01.10-86c015b5] - 2024-01-10 14:31
 
@@ -1424,7 +1424,7 @@ In particular, this should enable temperature and humidity sensor
 readings from H5103, but this is based on diagnostic output
 provided by others; we will see if it actually works!
 
-refs: https://github.com/wez/govee2mqtt/issues/27
+refs: https://github.com/adaofeliz/govee2mqtt/issues/27
 
 ## [2024.01.10-2ddf9413] - 2024-01-10 13:48
 
@@ -1435,7 +1435,7 @@ refs: https://github.com/wez/govee2mqtt/issues/27
 Might help folks in situations like the one in the linked
 issue.
 
-refs: https://github.com/wez/govee2mqtt/issues/38
+refs: https://github.com/adaofeliz/govee2mqtt/issues/38
 - Tweak waiting for settle message to show how many entities
 - Consider "code" to be an alias for "status" in govee json responses
 
@@ -1488,7 +1488,7 @@ to read it back after we've written a control request to the
 device, so that we can more immediately reflect the new state.
 - Allow for missing command in iot notif, and add some new fields
 
-refs: https://github.com/wez/govee2mqtt/issues/36
+refs: https://github.com/adaofeliz/govee2mqtt/issues/36
 
 ## [2024.01.09-ab0af6b7] - 2024-01-09 17:28
 
@@ -1502,7 +1502,7 @@ refs: https://github.com/wez/govee2mqtt/issues/36
 
 - Fix icon for triangle lights
 
-refs: https://github.com/wez/govee2mqtt/issues/32
+refs: https://github.com/adaofeliz/govee2mqtt/issues/32
 
 ## [2024.01.09-c452466f] - 2024-01-09 15:04
 
@@ -1545,7 +1545,7 @@ but I wouldn't be surprised if they need additional care
 and attention to work reasonably.
 - Improve handling of undoc api
 
-refs: https://github.com/wez/govee2mqtt/issues/21
+refs: https://github.com/adaofeliz/govee2mqtt/issues/21
 - Consider lan-api-support in a device as being a light
 
 For devices that are not already known to be lan-api-capable
@@ -1555,7 +1555,7 @@ then we assume that they are in fact lights.
 That said, in the linked issue, I don't think this would
 have changed anything.
 
-refs: https://github.com/wez/govee2mqtt/issues/32
+refs: https://github.com/adaofeliz/govee2mqtt/issues/32
 - Downgrade platform API trust when it conflicts with LAN API
 
 If the Platform API says that the device isn't an rgb light,
@@ -1566,7 +1566,7 @@ Again, I don't think this will change the outcome in
 the linked issue because this primarily affects us
 when trying to change scenes.
 
-refs: https://github.com/wez/govee2mqtt/issues/32
+refs: https://github.com/adaofeliz/govee2mqtt/issues/32
 - Add log to indicate which technique was used to control device
 
 So far, the absence of logging has meant that things were fine.
@@ -1584,7 +1584,7 @@ calling the raw resolve function.
 Check and warn about possible LAN API configuration issues on startup.
 - Allow for empty string when parsing embedded json
 
-refs: https://github.com/wez/govee2mqtt/issues/36
+refs: https://github.com/adaofeliz/govee2mqtt/issues/36
 
 ### 🧹 Refactor
 
@@ -1601,16 +1601,16 @@ It was getting a bit difficult to navigate
 
 - Synthesize a lan-compatible-light quirk for lan-disco'd devices
 
-refs: https://github.com/wez/govee2mqtt/issues/24
+refs: https://github.com/adaofeliz/govee2mqtt/issues/24
 - Enable use of IoT API to control lights
 
 This should help in the case where the platform API is broken
 for a device.
 
-refs: https://github.com/wez/govee2mqtt/issues/15
+refs: https://github.com/adaofeliz/govee2mqtt/issues/15
 - Add more friendly error message for inconsistent mqtt user/pass
 
-refs: https://github.com/wez/govee2mqtt/issues/24#issuecomment-1880103929
+refs: https://github.com/adaofeliz/govee2mqtt/issues/24#issuecomment-1880103929
 
 ## [2024.01.07-dc762b82] - 2024-01-07 15:50
 
@@ -1618,7 +1618,7 @@ refs: https://github.com/wez/govee2mqtt/issues/24#issuecomment-1880103929
 
 - Expand quirks database
 
-refs: https://github.com/wez/govee2mqtt/issues/24
+refs: https://github.com/adaofeliz/govee2mqtt/issues/24
 - Hass: use quirks icon info to pre-populate entity icons
 
 ## [2024.01.07-118ee247] - 2024-01-07 14:18
@@ -1630,7 +1630,7 @@ refs: https://github.com/wez/govee2mqtt/issues/24
 I saw this in a user's logs
 - Avoid a potential panic for devices with unusual device ids
 
-refs: https://github.com/wez/govee2mqtt/issues/23
+refs: https://github.com/adaofeliz/govee2mqtt/issues/23
 
 ## [2024.01.07-5ac41477] - 2024-01-07 13:52
 
@@ -1638,7 +1638,7 @@ refs: https://github.com/wez/govee2mqtt/issues/23
 
 - Make all undoc DeviceSettings fields optional
 
-refs: https://github.com/wez/govee2mqtt/issues/21#issuecomment-1880061957
+refs: https://github.com/adaofeliz/govee2mqtt/issues/21#issuecomment-1880061957
 - Update snapshots
 
 ## [2024.01.07-8b2527fc] - 2024-01-07 13:39
@@ -1647,7 +1647,7 @@ refs: https://github.com/wez/govee2mqtt/issues/21#issuecomment-1880061957
 
 - Add Purge Caches button to "Govee to MQTT" device
 
-This is helpful for situations like those in https://github.com/wez/govee2mqtt/issues/13
+This is helpful for situations like those in https://github.com/adaofeliz/govee2mqtt/issues/13
 - Improve debugging context for mqtt_light_command
 
 ## [2024.01.07-8daf3a61] - 2024-01-07 13:00
@@ -1663,20 +1663,20 @@ from the platform api
 It doesn't work very well:
 
 * Some devices don't actully have 0 level brightness
-  (https://github.com/wez/govee2mqtt/issues/18) so they don't
+  (https://github.com/adaofeliz/govee2mqtt/issues/18) so they don't
   appear to turn off
 * When doing light.turn_off for an area, setting segment levels
   has the side effect of turning the device back on, so the effect
   is that the light turns off and the immediately back on again.
 - DeviceSettings sku may not be present
 
-refs: https://github.com/wez/govee2mqtt/issues/21
+refs: https://github.com/adaofeliz/govee2mqtt/issues/21
 - Iot: adjust notification schema
 
-refs: https://github.com/wez/govee2mqtt/issues/14#issuecomment-1880050271
+refs: https://github.com/adaofeliz/govee2mqtt/issues/14#issuecomment-1880050271
 - Add quirk for H6159
 
-refs: https://github.com/wez/govee2mqtt/issues/14#issuecomment-1880050091
+refs: https://github.com/adaofeliz/govee2mqtt/issues/14#issuecomment-1880050091
 
 ## [2024.01.06-fc7ae219] - 2024-01-07 05:03
 
@@ -1717,7 +1717,7 @@ Doesn't do anything with them yet
 - Don't try to poll ble-only devices
 - Add quirk for H6141
 
-refs: https://github.com/wez/govee2mqtt/issues/15
+refs: https://github.com/adaofeliz/govee2mqtt/issues/15
 - Update test snapshots
 
 ## [2024.01.06-bb8fdbb3] - 2024-01-06 22:27
@@ -1728,16 +1728,16 @@ refs: https://github.com/wez/govee2mqtt/issues/15
 
 Will need to add a separate explicit cache clearing option.
 
-refs: https://github.com/wez/govee2mqtt/issues/16
+refs: https://github.com/adaofeliz/govee2mqtt/issues/16
 - Avoid registering a light with hass if it doesn't look like a light
 
-refs: https://github.com/wez/govee2mqtt/issues/15
+refs: https://github.com/adaofeliz/govee2mqtt/issues/15
 - Bump login negative cache to 15 mins
 
 Not totally sure about this, but I'd rather avoid burning someone's
 account access for 24 hours.
 
-refs: https://github.com/wez/govee2mqtt/issues/16
+refs: https://github.com/adaofeliz/govee2mqtt/issues/16
 
 ## [2024.01.06-65f6cfc7] - 2024-01-06 22:01
 
@@ -1760,7 +1760,7 @@ make any kind of automation decisions.
 
 - Try harder to get device id from iot notification
 
-refs: https://github.com/wez/govee2mqtt/issues/14#issuecomment-1879773924
+refs: https://github.com/adaofeliz/govee2mqtt/issues/14#issuecomment-1879773924
 - Make port 4002 message more directive and obvious
 - Show device info summary on startup
 
@@ -1777,12 +1777,12 @@ folks report issues
 Should yield better error messages
 - Try harder to derive sku from iot update
 
-refs: https://github.com/wez/govee2mqtt/issues/14#issuecomment-1879762186
+refs: https://github.com/adaofeliz/govee2mqtt/issues/14#issuecomment-1879762186
 - Avoid trying to create entities for devices we can't control
 
 We don't support BLE-only devices, for example
 
-refs: https://github.com/wez/govee2mqtt/issues/14#issuecomment-1879762953
+refs: https://github.com/adaofeliz/govee2mqtt/issues/14#issuecomment-1879762953
 
 ## [2024.01.06-b5e64128] - 2024-01-06 17:21
 
@@ -1790,7 +1790,7 @@ refs: https://github.com/wez/govee2mqtt/issues/14#issuecomment-1879762953
 
 - Make more fields optional
 
-refs: https://github.com/wez/govee2mqtt/issues/14#issuecomment-1879759175
+refs: https://github.com/adaofeliz/govee2mqtt/issues/14#issuecomment-1879759175
 
 ## [2024.01.06-d884fb09] - 2024-01-06 17:08
 
@@ -1798,10 +1798,10 @@ refs: https://github.com/wez/govee2mqtt/issues/14#issuecomment-1879759175
 
 - Improve error message around port 4002 bind error
 
-refs: https://github.com/wez/govee2mqtt/issues/14#issuecomment-1879753791
+refs: https://github.com/adaofeliz/govee2mqtt/issues/14#issuecomment-1879753791
 - Allow topic to be optional in the device list
 
-refs: https://github.com/wez/govee2mqtt/issues/14#issuecomment-1879755521
+refs: https://github.com/adaofeliz/govee2mqtt/issues/14#issuecomment-1879755521
 
 ## [2024.01.06-0e7bd37e] - 2024-01-06 16:48
 
@@ -1815,7 +1815,7 @@ refs: https://github.com/wez/govee2mqtt/issues/14#issuecomment-1879755521
 
 - Adjustments in caching and handling of ble devices
 
-refs: https://github.com/wez/govee2mqtt/issues/14
+refs: https://github.com/adaofeliz/govee2mqtt/issues/14
 
 ## [2024.01.06-f8aad93d] - 2024-01-06 15:53
 
@@ -1823,7 +1823,7 @@ refs: https://github.com/wez/govee2mqtt/issues/14
 
 - Invalid cached credentials when we get a 401
 
-refs: https://github.com/wez/govee2mqtt/issues/14
+refs: https://github.com/adaofeliz/govee2mqtt/issues/14
 
 ## [2024.01.06-bf77170b] - 2024-01-06 15:30
 
@@ -1831,7 +1831,7 @@ refs: https://github.com/wez/govee2mqtt/issues/14
 
 - Relax schema for device list
 
-refs: https://github.com/wez/govee2mqtt/issues/14
+refs: https://github.com/adaofeliz/govee2mqtt/issues/14
 
 ## [2024.01.05-d995de93] - 2024-01-06 01:47
 
@@ -1842,7 +1842,7 @@ refs: https://github.com/wez/govee2mqtt/issues/14
 - Missed a bit
 - Explicitly re-subscribe on MQTT reconnect
 
-refs: https://github.com/wez/govee2mqtt/issues/3
+refs: https://github.com/adaofeliz/govee2mqtt/issues/3
 - Update scripts path
 
 ### 📚 Documentation
@@ -1866,7 +1866,7 @@ to happen.
 
 So, let's remove the entity removal step.
 
-refs: https://github.com/wez/govee2mqtt/issues/12
+refs: https://github.com/adaofeliz/govee2mqtt/issues/12
 
 ## [2024.01.05-27d5bd8a] - 2024-01-05 20:56
 
@@ -1876,20 +1876,20 @@ refs: https://github.com/wez/govee2mqtt/issues/12
 
 Eg: heaters, fan and humidifers can legitimately not have any.
 
-refs: https://github.com/wez/govee2mqtt/issues/4
+refs: https://github.com/adaofeliz/govee2mqtt/issues/4
 - Move undoc api from lan subcommand to its own subcommand
 
 Add a bit of summarized output at the end.
 
-refs: https://github.com/wez/govee2mqtt/issues/7
+refs: https://github.com/adaofeliz/govee2mqtt/issues/7
 - Add caching to undoc oneclick stuff
 - Proof of concept: activate one click scenes via cli
 - Add REST api for one-clicks
 
-refs: https://github.com/wez/govee2mqtt/issues/7
+refs: https://github.com/adaofeliz/govee2mqtt/issues/7
 - Add oneclick scenes to hass
 
-refs: https://github.com/wez/govee2mqtt/issues/7
+refs: https://github.com/adaofeliz/govee2mqtt/issues/7
 
 ## [2024.01.05-79e43690] - 2024-01-05 16:48
 
@@ -1900,7 +1900,7 @@ refs: https://github.com/wez/govee2mqtt/issues/7
 We blend 4 different sources of data, try to make it easier to
 figure out what we're seeing and from where.
 
-refs: https://github.com/wez/govee2mqtt/issues/4
+refs: https://github.com/adaofeliz/govee2mqtt/issues/4
 
 ## [2024.01.05-52b63e97] - 2024-01-05 16:31
 
@@ -1916,7 +1916,7 @@ Improve error context and reporting along this code path.
 Make it clear that if we fail up through the mqtt loop that we
 are fatally broken, and terminate the process.
 
-refs: https://github.com/wez/govee2mqtt/issues/4
+refs: https://github.com/adaofeliz/govee2mqtt/issues/4
 
 ## [2024.01.05-816211da] - 2024-01-05 14:33
 
@@ -1933,7 +1933,7 @@ effort to figure out when the mode is no longer active;
 we use a simple heuristic of clearing it when the color
 or color temperature are changed.
 
-refs: https://github.com/wez/govee2mqtt/issues/5
+refs: https://github.com/adaofeliz/govee2mqtt/issues/5
 
 ### 🐛 Bug Fixes
 
@@ -1945,7 +1945,7 @@ refs: https://github.com/wez/govee2mqtt/issues/5
 
 - Relax dsp_version_soft type
 
-refs: https://github.com/wez/govee2mqtt/issues/4
+refs: https://github.com/adaofeliz/govee2mqtt/issues/4
 
 ## [2024.01.04-a76b0bbf] - 2024-01-05 04:07
 
@@ -2050,7 +2050,7 @@ Ultimately, I'll need to remove the deny-unknown-fields attribute
 - Ci: setup toolchain for cross
 - Add basic readme and license
 - Add the web assets to the docker image
-- Bump the all group with 1 update ([#2](https://github.com/wez/govee2mqtt/issues/2))
+- Bump the all group with 1 update ([#2](https://github.com/adaofeliz/govee2mqtt/issues/2))
 
 Bumps the all group with 1 update: [k9](https://github.com/aaronabramov/k9).
 
@@ -2093,7 +2093,7 @@ want to support it, and I don't think anyone will really need it.
 - Add addon install docs
 - Add support for DIY scenes
 
-refs: https://github.com/wez/govee2mqtt/issues/3
+refs: https://github.com/adaofeliz/govee2mqtt/issues/3
 - Do a better job at filling out light metadata
 
 brightness, rgb and color temp are now conditionally enabled
@@ -2123,12 +2123,12 @@ don't otherwise currently explicitly support.
 - Adjust ttls for credential caches
 - Add new undoc api field
 
-refs: https://github.com/wez/govee2mqtt/issues/6
+refs: https://github.com/adaofeliz/govee2mqtt/issues/6
 - Improve error context around http requests
 - Update test snapshot to go with f3eae71dff8f594e1230b8a7b5c5e7dfaa940d66
 - Adjust for interesting govee schema
 
-refs: https://github.com/wez/govee2mqtt/issues/4
+refs: https://github.com/adaofeliz/govee2mqtt/issues/4
 - Merge in SKU scene data when listing scenes
 
 Today the Govee Platform API is only returning the first scene
@@ -2170,7 +2170,7 @@ As for this commit: it simply defaults to automatic color and 100%
 sensitivity when activating the effect.  It's likely good enough
 for the moment.
 
-refs: https://github.com/wez/govee2mqtt/issues/8
+refs: https://github.com/adaofeliz/govee2mqtt/issues/8
 - Remove stray debug
 - Add quirks for H610A
 
@@ -2191,7 +2191,7 @@ to get routed via the IoT MQTT connection.
 
 That can be examined in a follow up commit.
 
-refs: https://github.com/wez/govee2mqtt/issues/7
+refs: https://github.com/adaofeliz/govee2mqtt/issues/7
 - Redact email, key, password from run.sh output
 - Explicitly manipulate the addon version number
 

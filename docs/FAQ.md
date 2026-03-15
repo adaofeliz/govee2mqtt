@@ -50,7 +50,7 @@ You may also wish to try deleting the device(s) from the MQTT integration
 in Home Assistant, then going to the "Govee to MQTT" device and clicking
 the "Purge Caches" button to see how the situation evolves.
 
-<img src="https://github.com/wez/govee2mqtt/assets/117777/565d8580-f068-4ec3-8c16-11d2808688bf" width="50%">
+<img src="https://github.com/adaofeliz/govee2mqtt/assets/117777/565d8580-f068-4ec3-8c16-11d2808688bf" width="50%">
 
 ## Is my device supported?
 
